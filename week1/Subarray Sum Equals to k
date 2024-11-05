@@ -1,0 +1,19 @@
+class Solution {
+    int count=0;
+    int sum=0;
+    public int subarraySum(int[] nums, int k) {
+        HashMap<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            sum+=nums[i];
+            if(sum==k){
+                count++;
+            }
+            if(map.get(sum-k)){
+                count++;
+
+            }
+        }
+        }
+}
+
+       
