@@ -1,0 +1,15 @@
+class Solution {
+    public int buyChoco(int[] prices, int money) {
+        Arrays.sort(prices);
+        int totalpurchase=prices[0]+prices[1];
+        if(totalpurchase==money){
+            return 0;
+        }
+        else if(totalpurchase<money){
+            int moneyleft=money-totalpurchase;
+            return moneyleft;
+            
+        }
+            return money;
+    }
+}
